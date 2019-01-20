@@ -19,5 +19,10 @@
 3. Run `./firmware_tool.py` on the `*.hex` firmware update file.
 
 
+## Reverse engineering notes
+
+See [Notes.md](./Notes.md).
+
+
 [ksc]: https://github.com/kaitai-io/kaitai_struct_compiler
 [kspr]: https://github.com/kaitai-io/kaitai_struct_python_runtime
