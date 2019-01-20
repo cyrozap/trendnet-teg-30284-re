@@ -50,8 +50,8 @@
     - Modified by Broadcom.
     - Majority of sources are available.
       - Certain proprietary Broadcom kernel modules are excluded.
-        - linux-kernel-bde.ko
-        - linux-user-bde.ko
+        - `linux-kernel-bde.ko`
+        - `linux-user-bde.ko`
   - Sources downloadable from TRENDnet.
     - [gpl\_teg-30284\_v1(1.00.010).tar.gz](http://downloads.trendnet.com/gpl/gpl_teg-30284_v1(1.00.010).tar.gz).
     - sha1sum: `BFA4665258023543878630FEE6768FD301606A4D  gpl_teg-30284_v1(1.00.010).tar.gz`
