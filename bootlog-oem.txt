@@ -1,0 +1,184 @@
+
+
+U-Boot 2012.10 (Oct 31 2017 - 17:02:04)
+
+BENCH SCREENING TEST1
+=========================================
+IPROC_XGPLL_CTRL_3: 0x05400000
+IPROC_XGPLL_STATUS: 0x8000052d
+DCO code: 82
+PASS
+=========================================
+DEV ID = 0xdb56
+SKU ID = 0x8346
+DDR type: DDR3
+MEMC 0 DDR speed = 667MHz
+ddr_init2: Calling soc_ddr40_set_shmoo_dram_config
+ddr_init2: Calling soc_ddr40_phy_calibrate
+C01. Check Power Up Reset_Bar
+C02. Config and Release PLL from reset
+C03. Poll PLL Lock
+C04. Calibrate ZQ (ddr40_phy_calib_zq)
+C05. DDR PHY VTT On (Virtual VTT setup) DISABLE all Virtual VTT
+C06. DDR40_PHY_DDR3_MISC
+C07. VDL Calibration
+C07.1
+C07.2
+C07.4
+C07.4.1
+C07.4.4
+VDL calibration result: 0x30000003 (cal_steps = 0)
+C07.4.5
+C07.4.6
+C07.5
+C08. DDR40_PHY_DDR3_MISC : Start DDR40_PHY_RDLY_ODT....
+C09. Start ddr40_phy_autoidle_on (MEM_SYS_PARAM_PHY_AUTO_IDLE) ....
+C10. Wait for Phy Ready
+Programming controller register
+ddr_init2: Calling soc_ddr40_shmoo_ctl
+Validate Shmoo parameters stored in flash ..... OK
+Press Ctrl-C to run Shmoo ..... skipped
+Restoring Shmoo parameters from flash ..... done
+Running simple memory test ..... OK
+DDR Tune Completed
+DRAM:  256 MiB
+WARNING: Caches not enabled
+Flash: PNOR enable reg [0x1803fc3c] set to: 0xc
+PNOR flash is not present - switch decoding bit back
+PNOR enable reg [0x1803fc3c] set to: 0x0
+NAND:   iProc NAND chip could not be initialized
+0 MiB
+Flash info Detected MX25L25635E total size 32 MiB
+In:    serial
+Out:   serial
+Err:   serial
+Unlocking L2 Cache ...Done
+arm_clk=400MHz, axi_clk=400MHz, apb_clk=100MHz, arm_periph_clk=200MHz
+Disabling outer cache
+Net:   Found MDK device: 14e4:8346:0000:01:48000000
+mdk_eth-0
+Model_Name: TEG-30284/1.0R
+Hit any key to stop autoboot:  3  2  1  0 
+Flash info Detected MX25L25635E total size 32 MiB
+   Image Name:   Image
+   Image Type:   ARM Linux Kernel Image (gzip compressed)
+   Data Size:    1447268 Bytes = 1.4 MiB
+   Load Address: 61008000
+   Entry Point:  61008000
+   Uncompressing Kernel Image ... OK
+Flash info Detected MX25L25635E total size 32 MiB
+
+Loading Runtime Image ....boot_prep_linux commandline: console=ttyS0,115200n8 maxcpus=1 mem=240M root=/dev/mtdblock3 rw rootfstype=squashfs csb=0x03C840B5 cso=0x0B97642A csf=0x4D8C4D48 sfin=MX25L25635E,32MB,10215456;0 ethaddr=D8:EB:97:xx:xx:xx bid=TEG-30284/1.0R user_debug=31
+Using machid 0xbb8 from environment
+
+Starting kernel ...
+
+Disabling outer cache
+Booting Linux on physical CPU 0
+Linux version 3.6.5-Broadcom Linux (rain@Rain2) (gcc version 4.7.2 (Broadcom Linux) ) #1 SMP Thu Oct 12 11:16:08 CST 2017
+CPU: ARMv7 Processor [414fc091] revision 1 (ARMv7), cr=10c53c7d
+CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+Machine: Broadcom iProc
+Memory policy: ECC disabled, Data cache writealloc
+BUG: mapping for 0x18000000 at 0xff000000 out of vmalloc space
+BUG: mapping for 0x19000000 at 0xff200000 out of vmalloc space
+PERCPU: Embedded 7 pages/cpu @c04c7000 s5568 r8192 d14912 u32768
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 60960
+Kernel command line: console=ttyS0,115200n8 maxcpus=1 mem=240M root=/dev/mtdblock3 rw rootfstype=squashfs csb=0x03C840B5 cso=0x0B97642A csf=0x4D8C4D48 sfin=MX25L25635E,32MB,10215456;0 ethaddr=D8:EB:97:xx:xx:xx bid=TEG-30284/1.0R user_debug=31
+PID hash table entries: 1024 (order: 0, 4096 bytes)
+Dentry cache hash table entries: 32768 (order: 5, 131072 bytes)
+Inode-cache hash table entries: 16384 (order: 4, 65536 bytes)
+Memory: 240MB = 240MB total
+Memory: 240640k/240640k available, 5120k reserved, 0K highmem
+Virtual kernel memory layout:
+    vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+    fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+    vmalloc : 0xcf800000 - 0xff000000   ( 760 MB)
+    lowmem  : 0xc0000000 - 0xcf000000   ( 240 MB)
+    modules : 0xbf000000 - 0xc0000000   (  16 MB)
+      .text : 0xc0008000 - 0xc0290000   (2592 kB)
+      .init : 0xc0290000 - 0xc02ad5c0   ( 118 kB)
+      .data : 0xc02ae000 - 0xc02d9040   ( 173 kB)
+       .bss : 0xc02d9064 - 0xc02e3ed0   (  44 kB)
+SLUB: Genslabs=11, HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+Hierarchical RCU implementation.
+	RCU restricting CPUs from NR_CPUS=4 to nr_cpu_ids=1.
+NR_IRQS:292
+Data abort at addr=0x0, fsr=0x1406 ignored.
+sched_clock: 32 bits at 100 Hz, resolution 10000000ns, wraps every 4294967286ms
+Calibrating delay loop... 795.44 BogoMIPS (lpj=3977216)
+pid_max: default: 4096 minimum: 301
+Mount-cache hash table entries: 512
+CPU: Testing write buffer coherency: ok
+CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+Setting up static identity map for 0x611eb958 - 0x611eb9b0
+L310 cache controller enabled
+l2x0: 8 ways, CACHE_ID 0x410000c9, AUX_CTRL 0x0a120000, Cache size: 131072 B
+Brought up 1 CPUs
+SMP: Total of 1 processors activated (795.44 BogoMIPS).
+devtmpfs: initialized
+NET: Registered protocol family 16
+DMA: preallocated 256 KiB pool for atomic coherent allocations
+Sel=1 Ovr=0 Div=2
+UART clock rate 50000000
+request_idm_timeout_interrupts: 600 entry
+idm_timeout_handler: 340, 0 entry
+idm_timeout_handler: 429, 2
+idm_timeout_handler: 431, 180121fc
+idm_timeout_handler: 433, 000c000c
+idm_timeout_handler: 435, 00111200
+idm_timeout_handler: 438, 0
+idm_timeout_handler: 472, 1
+idm_timeout_handler: 474, 1c09cac0
+idm_timeout_handler: 476, 00040004
+idm_timeout_handler: 478, 01161201
+idm_timeout_handler: 481, 0
+idm_timeout_handler: 574, 7
+idm_timeout_handler: 576, 5001c000
+idm_timeout_handler: 578, 000c000c
+idm_timeout_handler: 580, 011f1303
+idm_timeout_handler: 583, 0
+idm_timeout_handler: 585 exit
+request_idm_timeout_interrupts: 696 exit
+bio: create slab <bio-0> at 0
+Switching to clocksource iproc_gtimer
+pm_init: Initializing Power Management ....
+iproc gpiochip add GPIOA
+GPIOA:ioaddr ff000060 
+GPIOA:intr_ioaddr ff000000 dmu_ioaddr   (null)
+Data abort at addr=0x0, fsr=0x1406 ignored.
+PCIe port 0 in End-Point mode - ignored
+Data abort at addr=0x0, fsr=0x1406 ignored.
+PCIe port 1 in End-Point mode - ignored
+sp805-wdt sp805-wdt: registration successful
+sp805-wdt sp805-wdt: CCB wdt driver - timtout=60 sec, nowayout=0
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+msgmni has been set to 470
+Block layer SCSI generic (bsg) driver version 0.4 loaded (major 251)
+io scheduler noop registered
+io scheduler deadline registered
+io scheduler cfq registered (default)
+Serial: 8250/16550 driver, 2 ports, IRQ sharing enabled
+serial8250.0: ttyS0 at MMIO 0x18000400 (irq = 123) is a 16550A
+console [ttyS0] enabled
+serial8250.0: ttyS1 at MMIO 0x18000300 (irq = 123) is a 16550A
+brd: module loaded
+i2c /dev entries driver
+qspi_iproc qspi_iproc.1: 4-lane output, 3-byte address
+m25p80 spi1.0: found mx25l25635e, expected m25p80
+m25p80 spi1.0: mx25l25635e (32768 Kbytes)
+Creating 5 MTD partitions on "spi1.0":
+0x000000000000-0x0000000c0000 : "boot"
+0x0000000c0000-0x0000000e0000 : "env"
+0x000000100000-0x000000300000 : "system"
+0x000000300000-0x000000f00000 : "rootfs"
+0x000000f00000-0x000001000000 : "jffs2"
+VFS: Mounted root (squashfs filesystem) readonly on device 31:3.
+devtmpfs: mounted
+Freeing init memory: 116K
+
+MAC Address : D8-EB-97-xx-xx-xx
+linux_kernel_bde: module license 'Proprietary' taints kernel.
+Disabling lock debugging due to kernel taint
+WARNING: bcm common command IPROCRead not alphabetized
