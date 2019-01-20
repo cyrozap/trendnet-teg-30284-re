@@ -38,3 +38,23 @@
     - L14/L15 set the RX pin, and L16/L17 set the TX pin.
     - L14 and L17 are connected to one console pin, and L15 and L16 are
       connected to the other console pin.
+
+## Software
+
+- Bootloader
+  - U-Boot 2012.10
+    - Modified by Broadcom.
+    - Sources unavailable (for now).
+- OS
+  - Linux 3.6.5
+    - Modified by Broadcom.
+    - Majority of sources are available.
+      - Certain proprietary Broadcom kernel modules are excluded.
+        - linux-kernel-bde.ko
+        - linux-user-bde.ko
+  - Sources downloadable from TRENDnet.
+    - [gpl\_teg-30284\_v1(1.00.010).tar.gz](http://downloads.trendnet.com/gpl/gpl_teg-30284_v1(1.00.010).tar.gz).
+    - sha1sum: `BFA4665258023543878630FEE6768FD301606A4D  gpl_teg-30284_v1(1.00.010).tar.gz`
+  - Firmware upgrade image also available.
+    - [fw\_teg-30284\_v1(1.00.024).zip](http://downloads.trendnet.com/teg-30284/firmware/fw_teg-30284_v1(1.00.024).zip)
+    - sha1sum: `F32537ACB4211520CADED2F34A6C4AF00FF642A4  fw_teg-30284_v1(1.00.024).zip`
