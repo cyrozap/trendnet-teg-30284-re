@@ -2,6 +2,8 @@
 
 ## Hardware
 
+### IC List
+
 - BCM53346A0KFSBG
   - Broadcom
   - 24+4 port GbE switch SoC
@@ -22,7 +24,7 @@
   - Broadcom
   - 8-port GbE PHY
 
-## Connectors
+### Connectors
 
 - UART
   - 115200, 8N1, 3V3.
