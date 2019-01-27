@@ -182,3 +182,14 @@ MAC Address : D8-EB-97-xx-xx-xx
 linux_kernel_bde: module license 'Proprietary' taints kernel.
 Disabling lock debugging due to kernel taint
 WARNING: bcm common command IPROCRead not alphabetized
+temp4: ERROR: device did not initialize: Operation timed out
+status=0xb6
+I2C: detected 2 devices
+I2C device found at slave address 0X30 (Unknown)
+I2C device found at slave address 0X4C (temp4: LM75 or MAX664x Temperature Sensor)
+H/W Version : 1.0R
+F/W Version : 1.00.016
+
+		 L2 Management Switch 
+
+TEG-30284 login: 
