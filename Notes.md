@@ -52,9 +52,12 @@
       - Certain proprietary Broadcom kernel modules are excluded.
         - `linux-kernel-bde.ko`
         - `linux-user-bde.ko`
+      - There appear to be GPL-licensed versions of those kernel modules available [here][gpl-modules].
   - Sources downloadable from TRENDnet.
     - [gpl\_teg-30284\_v1(1.00.010).tar.gz](http://downloads.trendnet.com/gpl/gpl_teg-30284_v1(1.00.010).tar.gz).
     - sha1sum: `BFA4665258023543878630FEE6768FD301606A4D  gpl_teg-30284_v1(1.00.010).tar.gz`
   - Firmware upgrade image also available.
     - [fw\_teg-30284\_v1(1.00.024).zip](http://downloads.trendnet.com/teg-30284/firmware/fw_teg-30284_v1(1.00.024).zip)
     - sha1sum: `F32537ACB4211520CADED2F34A6C4AF00FF642A4  fw_teg-30284_v1(1.00.024).zip`
+
+[gpl-modules]: https://github.com/Broadcom-Switch/OpenNSL/tree/a3f85f5567f3142755265d32efb22cfe5afdb22e/sdk-6.5.12-gpl-modules/systems/bde/linux
