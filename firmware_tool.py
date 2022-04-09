@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import argparse
-import struct
 import sys
 
 try:
@@ -11,12 +10,8 @@ except ModuleNotFoundError:
     sys.exit(1)
 
 
-def checksum(data):
-    temp = 0
-    for i in range(len(data)):
-        temp += struct.unpack_from('B', data, i)[0]
-
-    return temp & 0xFFFFFFFF
+def checksum(data : bytes):
+    return sum(data) & 0xFFFFFFFF
 
 
 if __name__ == "__main__":
