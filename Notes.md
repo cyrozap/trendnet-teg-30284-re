@@ -52,7 +52,8 @@
       - Certain proprietary Broadcom kernel modules are excluded.
         - `linux-kernel-bde.ko`
         - `linux-user-bde.ko`
-      - There appear to be GPL-licensed versions of those kernel modules available [here][gpl-modules].
+      - There appear to be GPL-licensed versions of those kernel modules available [here][OpenNSL modules] and [here][OpenBCM modules].
+        - A proprietary userspace library that can interact with the `linux-user-bde.ko` kernel module is available [here][OpenBCM library].
   - Sources downloadable from TRENDnet.
     - [gpl\_teg-30284\_v1(1.00.010).tar.gz](http://downloads.trendnet.com/gpl/gpl_teg-30284_v1(1.00.010).tar.gz).
     - sha1sum: `BFA4665258023543878630FEE6768FD301606A4D  gpl_teg-30284_v1(1.00.010).tar.gz`
@@ -60,4 +61,6 @@
     - [fw\_teg-30284\_v1(1.00.024).zip](http://downloads.trendnet.com/teg-30284/firmware/fw_teg-30284_v1(1.00.024).zip)
     - sha1sum: `F32537ACB4211520CADED2F34A6C4AF00FF642A4  fw_teg-30284_v1(1.00.024).zip`
 
-[gpl-modules]: https://github.com/Broadcom-Switch/OpenNSL/tree/a3f85f5567f3142755265d32efb22cfe5afdb22e/sdk-6.5.12-gpl-modules/systems/bde/linux
+[OpenNSL modules]: https://github.com/Broadcom-Switch/OpenNSL/tree/a3f85f5567f3142755265d32efb22cfe5afdb22e/sdk-6.5.12-gpl-modules/systems/bde/linux
+[OpenBCM modules]: https://github.com/Broadcom-Network-Switching-Software/OpenBCM/tree/85a3711507d3fe5703b1e0ab5f6eba5f020ee739/sdk-6.5.16/src/gpl-modules/systems/bde/linux
+[OpenBCM library]: https://github.com/Broadcom-Network-Switching-Software/OpenBCM/blob/85a3711507d3fe5703b1e0ab5f6eba5f020ee739/sdk-6.5.16/systems/bde/linux/user/linux-user-bde.c
